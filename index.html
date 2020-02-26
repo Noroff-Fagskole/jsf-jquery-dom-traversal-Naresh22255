@@ -1,182 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>JQuery DOM Traversal - Noroff</title>
 
-
     <link rel="stylesheet" href="./css/master.css" text="text/css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="question">
-        <div id="question1" data-start="true">Start</div>
-        <div data-answer="true">End</div>
+      <div id="question1" data-start="true">Start</div>
+      <div data-answer="true">End</div>
     </div>
 
     <div class="question">
-        <div data-answer="true">End</div>
-        <div class="question2" data-start="true">Start</div>
+      <div data-answer="true">End</div>
+      <div class="question2" data-start="true">Start</div>
     </div>
 
     <div class="question">
+      <div class="question3" data-start="true">
+        Start
 
-        <div class="question3" data-start="true">
-            Start
-            
+        <span data-answer="true">End</span>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question4" data-start="true">
+        Start
+
+        <div data-answer="true">End</div>
+        <p data-answer="true">End</p>
+        <div data-answer="true">End</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question5" data-start="true">
+        Start
+        <div>
+          <div>
             <span data-answer="true">End</span>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="question">
-        <div class="question4" data-start="true">
-            Start
 
-            <div data-answer="true">End</div>
+    <div class="question">
+      <div class="question6" data-start="true">
+        Start
+        <div>
+          <div>
             <p data-answer="true">End</p>
-            <div data-answer="true">End</div>
+          </div>
+          <p data-answer="true">End</p>
         </div>
+      </div>
     </div>
 
-    
     <div class="question">
-        <div class="question5" data-start="true">
-            Start
-            <div>
-                <div>
-                    <span data-answer="true">End</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="question">
-        <div class="question6" data-start="true">
-            Start
-            <div>
-                <div>
-                    <p data-answer="true">End</p>
-                </div>
-                <p data-answer="true">End</p>
-            </div>
-        </div>
-    </div>
-
-
-    
-    <div class="question">
+      <div>
         <div>
-            <div>
-                <div>
-                    <p data-answer="true">End</p>
-                </div>
-                <a class="question7" data-start="true">Start</a>
-            </div>
+          <div>
+            <p data-answer="true">End</p>
+          </div>
+          <a class="question7" data-start="true">Start</a>
         </div>
+      </div>
     </div>
 
-    
     <div class="question">
-        <div>
-            <ul>
-                <li data-answer="true">End</li>
-                <li data-answer="true">End</li>
-                <li data-answer="true">End</li>
-                <li class="question8" data-start="true">Start</li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li data-answer="true">End</li>
+          <li data-answer="true">End</li>
+          <li data-answer="true">End</li>
+          <li class="question8" data-start="true">Start</li>
+        </ul>
+      </div>
     </div>
 
-
     <div class="question">
-        <div>
-            <ul>
-                <li>Item</li>
-                <li>Item</li>
-                <li data-answer="true">End</li>
-                <li class="question9" data-start="true">Start</li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li>Item</li>
+          <li>Item</li>
+          <li data-answer="true">End</li>
+          <li class="question9" data-start="true">Start</li>
+        </ul>
+      </div>
     </div>
 
-
-
     <div class="question">
-        <div>
-            <ul>
-                <li class="question10" data-start="true">Start</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li data-answer="true">End</li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li class="question10" data-start="true">Start</li>
+          <li>Item</li>
+          <li>Item</li>
+          <li data-answer="true">End</li>
+        </ul>
+      </div>
     </div>
 
-
-    
     <div class="question">
-        <div data-answer="true">
+      <div data-answer="true">
+        End
+
+        <ul>
+          <li>
+            <a>
+              No link
+            </a>
+          </li>
+          <li>
+            <a href="#" class="question11" data-start="true">
+              Start
+            </a>
+          </li>
+          <li>
+            <a>
+              No link
+            </a>
+          </li>
+          <li>
+            <a>
+              No link
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question">
+      <div>
+        <ul>
+          <li>
+            <a>
+              No link
+            </a>
+          </li>
+          <li>
+            <a href="#" class="question12" data-start="true">
+              Start
+            </a>
+          </li>
+          <li data-answer="true">
             End
-
-            <ul>
-                <li>
-                    <a>
-                        No link
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="question11" data-start="true">
-                        Start
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        No link
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        No link
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <a>
+              No link
+            </a>
+          </li>
+          <li>
+            <a>
+              No link
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="question">
-        <div>
-            
-            
-            <ul>
-                <li>
-                    <a>
-                        No link
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="question12" data-start="true">
-                        Start
-                    </a>
-                </li>
-                <li data-answer="true">
-                    End
-                    <a>
-                        No link
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        No link
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script src="./js/master.js"></script>
-</body>
+    <script src="js/master.js"></script>
+  </body>
 </html>
